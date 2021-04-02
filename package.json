@@ -1,0 +1,14 @@
+{
+  "name": "emotion-doc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "vitepress dev src --port 1680",
+    "build": "vitepress build src",
+    "serve": "vitepress serve src"
+  },
+  "devDependencies": {
+    "vitepress": "^0.12.2"
+  }
+}
