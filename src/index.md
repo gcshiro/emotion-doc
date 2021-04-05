@@ -171,3 +171,18 @@ const Button: React.FC<Props> = ({children, size}) => (
   </button>
 )
 ```
+
+::: warning
+
+- syled-componentsであれば、`isLoading`のときに`not-allowd`が適用されるが emotionのcss propsではstyleが適用されない
+
+```tsx
+const style = (theme: Theme, isLoading?: boolean) => css`
+  cursor: pointer;
+
+  ${isLoading} {
+    cursor: not-allowd;
+  }
+`;
+```
+:::
